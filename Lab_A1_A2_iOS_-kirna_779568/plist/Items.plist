@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   Items.plist
+   A2_FA_iOS_Hasan_C0788314
+
+   Created by Khushboo on 02/02/21.
+   Copyright (c) 2021 Hasan. All rights reserved.
+-->
+<plist version="1.0">
+    <array>
+        <dict>
+            <key>itemId</key>
+            <integer>0</integer>
+            <key>itemName</key>
+            <string>Tata Group</string>
+            <key>itemDescription</key>
+            <string>Tata Group is an Indian multinational conglomerate manufacturer of automobiles, airplanes and other products, headquartered in Mumbai, Maharashtra, India. Founded in 1868 by Jamshedji Tata, the company gained international recognition after purchasing several global companies.</string>
+            <key>itemCost</key>
+            <integer>8675</integer>
+            <key>itemProvider</key>
+            <string>Tata</string>
+        </dict>
+        <dict>
+            <key>itemId</key>
+            <integer>2</integer>
+            <key>itemName</key>
+            <string>Microsoft</string>
+            <key>itemDescription</key>
+            <string>Microsoft Corporation is an American multinational technology corporation which produces computer software, consumer electronics, personal computers, and related services.</string>
+            <key>itemCost</key>
+            <real>5335</real>
+            <key>itemProvider</key>
+            <string>Microsoft Corporation</string>
+        </dict>
+        <dict>
+            <key>itemId</key>
+            <integer>3</integer>
+            <key>itemName</key>
+            <string>Apple</string>
+            <key>itemDescription</key>
+            <string>Apple Inc. is an American multinational technology company that specializes in consumer electronics, computer software, and online services. Apple is the world's largest technology company by revenue and, since January 2021, the world's most valuable company.</string>
+            <key>itemCost</key>
+            <real>1299</real>
+            <key>itemProvider</key>
+            <string>Apple Inc</string>
+        </dict>
+        <dict>
+            <key>itemId</key>
+            <integer>4</integer>
+            <key>itemName</key>
+            <string>Amazon</string>
+            <key>itemDescription</key>
+            <string>Amazon.com, Inc. is an American multinational conglomerate which focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence. It is one of the Big Five companies in the U.S. information technology industry, along with Google, Apple, Microsoft, and Facebook</string>
+            <key>itemCost</key>
+            <integer>78672</integer>
+            <key>itemProvider</key>
+            <string>Amazon Inc</string>
+        </dict>
+        <dict>
+            <key>itemId</key>
+            <integer>5</integer>
+            <key>itemName</key>
+            <string>Facebook</string>
+            <key>itemDescription</key>
+            <string>JFacebook, Inc., is an American multinational technology company based in Menlo Park, California. It was founded in 2004 as TheFacebook by Mark Zuckerberg, Eduardo Saverin, Andrew McCollum, Dustin Moskovitz, and Chris Hughes, roommates and students at Harvard College</string>
+            <key>itemCost</key>
+            <integer>22342</integer>
+            <key>itemProvider</key>
+            <string>Facebook</string>
+        </dict>
+        <dict>
+            <key>itemId</key>
+            <integer>6</integer>
+            <key>itemName</key>
+            <string>Google</string>
+            <key>itemDescription</key>
+            <string>Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, a search engine, cloud computing, software, and hardware</string>
+            <key>itemCost</key>
+            <integer>23131</integer>
+            <key>itemProvider</key>
+            <string>Alphabet</string>
+        </dict>
+        <dict>
+            <key>itemId</key>
+            <integer>7</integer>
+            <key>itemName</key>
+            <string>Tesla Model S</string>
+            <key>itemDescription</key>
+            <string>With 2200x1300 resolution, ultra bright, true colors, exceptional responsiveness and left-right tilt, the new center display is the best screen to watch anywhere. Clean, powerful yet invisible cabin conditioning. Tri-zone temperature controls, ventilated front seats and HEPA filtration come standard.</string>
+            <key>itemCost</key>
+            <integer>7899</integer>
+            <key>itemProvider</key>
+            <string>Tesla</string>
+        </dict>
+        <dict>
+            <key>itemId</key>
+            <integer>8</integer>
+            <key>itemName</key>
+            <string>MAgic Keyboard</string>
+            <key>itemDescription</key>
+            <string>Magic Keyboard with Numeric Keypad features an extended layout, with document navigation controls for quick scrolling and full-size arrow keys for gaming. A scissor mechanism beneath each key allows for increased stability, while optimised key travel and a low profile provide a comfortable and precise typing experience. The numeric keypad is also great for spreadsheets and finance applications. And the built-in, rechargeable battery is incredibly long-lasting, powering your keyboard for about a month or more between charges</string>
+            <key>itemCost</key>
+            <integer>379</integer>
+            <key>itemProvider</key>
+            <string>Apple</string>
+        </dict>
+        <dict>
+            <key>itemId</key>
+            <integer>9</integer>
+            <key>itemName</key>
+            <string>Apple Pencil</string>
+            <key>itemDescription</key>
+            <string>Apple Pencil (2nd generation) delivers pixel-perfect precision and industry-leading low latency, making it great for drawing, sketching, colouring, taking notes, marking up email and more. And it’s as easy and natural to use as a pencil.
+    Apple Pencil (2nd generation) also allows you to change tools without setting it down, thanks to its intuitive touch surface that supports double-tapping.
+    Designed for iPad Pro and iPad Air, it features a flat edge that attaches magnetically for automatic charging and pairing.</string>
+            <key>itemCost</key>
+            <integer>199</integer>
+            <key>itemProvider</key>
+            <string>Apple</string>
+        </dict>
+        <dict>
+            <key>itemId</key>
+            <integer>10</integer>
+            <key>itemName</key>
+            <string>Back Pack</string>
+            <key>itemDescription</key>
+            <string>Outer Material: Polyester, Color: Red
+    Capacity: 22 liters; Weight: 580 grams; Dimensions: 30 cms x 15 cms x 48 cms (LxWxH)
+    Number of compartments: 3
+    Laptop Compatibility: Yes, Laptop Size: 15 inches
+    Warranty type: Manufacturer; 1 year International warranty valid for 1 year from the original date of purchase
+    Internal Organizer in the front pocket for secure placement, segregation &amp; easy access of all your essentials
+    Includes a laptop sleeve that can fit upto a 15.4&quot; laptop and a dog hook in the front pocket to attach your keys</string>
+            <key>itemCost</key>
+            <integer>79</integer>
+            <key>itemProvider</key>
+            <string>American Tourister</string>
+        </dict>
+    </array>
+</plist>
