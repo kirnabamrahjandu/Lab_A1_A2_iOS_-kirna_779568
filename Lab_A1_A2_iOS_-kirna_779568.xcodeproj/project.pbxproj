@@ -20,6 +20,8 @@
 		32EC95AD25C95ECC002A86C8 /* ItemStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC95AC25C95ECC002A86C8 /* ItemStruct.swift */; };
 		32EC95B125C9605D002A86C8 /* Items.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32EC95B025C9605D002A86C8 /* Items.plist */; };
 		32EC95B325C963EE002A86C8 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC95B225C963EE002A86C8 /* ItemDetailViewController.swift */; };
+		A25C3ED426F863EF00807AB5 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25C3ED326F863EF00807AB5 /* AddItemViewController.swift */; };
+		A25C3ED826F8644000807AB5 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25C3ED726F8644000807AB5 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		32EC95AC25C95ECC002A86C8 /* ItemStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStruct.swift; sourceTree = "<group>"; };
 		32EC95B025C9605D002A86C8 /* Items.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Items.plist; sourceTree = "<group>"; };
 		32EC95B225C963EE002A86C8 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		A25C3ED326F863EF00807AB5 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		A25C3ED726F8644000807AB5 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 		32EC958625C9575B002A86C8 /* Lab_A1_A2_iOS_-kirna_779568 */ = {
 			isa = PBXGroup;
 			children = (
+				A25C3ED626F8642C00807AB5 /* Common */,
 				A2627EA326F76CDA007E9B7B /* Controller */,
 				32EC95AF25C9604B002A86C8 /* plist */,
 				32EC95AB25C95EB8002A86C8 /* Model */,
@@ -119,11 +124,20 @@
 			path = plist;
 			sourceTree = "<group>";
 		};
+		A25C3ED626F8642C00807AB5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A25C3ED726F8644000807AB5 /* Common.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		A2627EA326F76CDA007E9B7B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				32EC958B25C9575B002A86C8 /* ViewController.swift */,
 				32EC95B225C963EE002A86C8 /* ItemDetailViewController.swift */,
+				A25C3ED326F863EF00807AB5 /* AddItemViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -204,7 +218,9 @@
 				32EC95A625C9582D002A86C8 /* Item+CoreDataClass.swift in Sources */,
 				32EC958C25C9575B002A86C8 /* ViewController.swift in Sources */,
 				32EC958825C9575B002A86C8 /* AppDelegate.swift in Sources */,
+				A25C3ED826F8644000807AB5 /* Common.swift in Sources */,
 				32EC958A25C9575B002A86C8 /* SceneDelegate.swift in Sources */,
+				A25C3ED426F863EF00807AB5 /* AddItemViewController.swift in Sources */,
 				32EC95B325C963EE002A86C8 /* ItemDetailViewController.swift in Sources */,
 				32EC95AA25C958BA002A86C8 /* CoreDataManager.swift in Sources */,
 				32EC959225C9575B002A86C8 /* Lab_A1_A2_iOS_-kirna_779568.xcdatamodeld in Sources */,

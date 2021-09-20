@@ -4,8 +4,8 @@
    Items.plist
    A2_FA_iOS_Hasan_C0788314
 
-   Created by Khushboo on 02/02/21.
-   Copyright (c) 2021 Hasan. All rights reserved.
+   Created by Kirna on 19/09/21.
+   Copyright (c) 2021 Kirna. All rights reserved.
 -->
 <plist version="1.0">
     <array>
@@ -85,23 +85,23 @@
             <key>itemId</key>
             <integer>7</integer>
             <key>itemName</key>
-            <string>Tesla Model S</string>
+            <string>Pepsi</string>
             <key>itemDescription</key>
-            <string>With 2200x1300 resolution, ultra bright, true colors, exceptional responsiveness and left-right tilt, the new center display is the best screen to watch anywhere. Clean, powerful yet invisible cabin conditioning. Tri-zone temperature controls, ventilated front seats and HEPA filtration come standard.</string>
+            <string>Pepsi is a carbonated soft drink manufactured by PepsiCo. Originally created and developed in 1893 by Caleb Bradham and introduced as Brad's Drink, it was renamed as Pepsi-Cola in 1898, and then shortened to Pepsi in 1961</string>
             <key>itemCost</key>
-            <integer>7899</integer>
+            <integer>8999</integer>
             <key>itemProvider</key>
-            <string>Tesla</string>
+            <string>PepsiCo</string>
         </dict>
         <dict>
             <key>itemId</key>
             <integer>8</integer>
             <key>itemName</key>
-            <string>MAgic Keyboard</string>
+            <string>iPhone 13</string>
             <key>itemDescription</key>
-            <string>Magic Keyboard with Numeric Keypad features an extended layout, with document navigation controls for quick scrolling and full-size arrow keys for gaming. A scissor mechanism beneath each key allows for increased stability, while optimised key travel and a low profile provide a comfortable and precise typing experience. The numeric keypad is also great for spreadsheets and finance applications. And the built-in, rechargeable battery is incredibly long-lasting, powering your keyboard for about a month or more between charges</string>
+            <string>iPhone 13 mini (13.77cm, 1 N) pricing is after trade-in of iPhone 11 64GB and is computed on MRP. Trade-in values vary based on the condition, year, and configuration of your trade-in device. You must be at least 18 years old. Additional terms from Apple or Apple’s trade-in partner may apply. Monthly pricing is based on purchase amount after deduction of trade in amount using credit card EMI at 14% pa over a 9 month tenure. Monthly pricing is rounded to the nearest rupee. Exact pricing will be provided by your bank, subject to your bank’s terms and conditions. </string>
             <key>itemCost</key>
-            <integer>379</integer>
+            <integer>734</integer>
             <key>itemProvider</key>
             <string>Apple</string>
         </dict>
@@ -109,33 +109,25 @@
             <key>itemId</key>
             <integer>9</integer>
             <key>itemName</key>
-            <string>Apple Pencil</string>
+            <string>Google Pixel 4a 5G</string>
             <key>itemDescription</key>
-            <string>Apple Pencil (2nd generation) delivers pixel-perfect precision and industry-leading low latency, making it great for drawing, sketching, colouring, taking notes, marking up email and more. And it’s as easy and natural to use as a pencil.
-    Apple Pencil (2nd generation) also allows you to change tools without setting it down, thanks to its intuitive touch surface that supports double-tapping.
-    Designed for iPad Pro and iPad Air, it features a flat edge that attaches magnetically for automatic charging and pairing.</string>
+            <string>5G capable cell phone gives you an extra boost of speed so you can download a movie in seconds, enjoy smooth streaming in ultra clear HD, play games at home and on the go, and even share your 5G speed with friends.The all day battery can last up to 48 hours with Extreme Battery Saver. Your phone will automatically receive the latest OS and security updates for at least 3 years.With HD Duo screen sharing, you can read articles, watch live sports, and video chat with friends and family</string>
             <key>itemCost</key>
-            <integer>199</integer>
+            <integer>2345</integer>
             <key>itemProvider</key>
-            <string>Apple</string>
+            <string>Google</string>
         </dict>
         <dict>
             <key>itemId</key>
             <integer>10</integer>
             <key>itemName</key>
-            <string>Back Pack</string>
+            <string>Nokia</string>
             <key>itemDescription</key>
-            <string>Outer Material: Polyester, Color: Red
-    Capacity: 22 liters; Weight: 580 grams; Dimensions: 30 cms x 15 cms x 48 cms (LxWxH)
-    Number of compartments: 3
-    Laptop Compatibility: Yes, Laptop Size: 15 inches
-    Warranty type: Manufacturer; 1 year International warranty valid for 1 year from the original date of purchase
-    Internal Organizer in the front pocket for secure placement, segregation &amp; easy access of all your essentials
-    Includes a laptop sleeve that can fit upto a 15.4&quot; laptop and a dog hook in the front pocket to attach your keys</string>
+            <string>Nokia Corporation is a Finnish multinational telecommunications, information technology, and consumer electronics company, founded in 1865. Nokia's main headquarters are in Espoo, Finland, in the greater Helsinki metropolitan area, but the company's actual roots are in the Tampere region of Pirkanmaa.</string>
             <key>itemCost</key>
-            <integer>79</integer>
+            <integer>6899</integer>
             <key>itemProvider</key>
-            <string>American Tourister</string>
+            <string>Nokia Corporation</string>
         </dict>
     </array>
 </plist>

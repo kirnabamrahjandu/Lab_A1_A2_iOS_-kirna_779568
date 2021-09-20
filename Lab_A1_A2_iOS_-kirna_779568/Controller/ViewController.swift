@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  Lab_A1_A2_iOS_-kirna_779568
 //
-//  Created by Kirnaon 19/09/21.
-//  Copyright © 2021 Kirnaon. All rights reserved.
+//  Created by Kirna 19/09/21.
+//  Copyright © 2021 Kirna. All rights reserved.
 //
 
 
@@ -14,14 +14,17 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tblView: UITableView!
+    @IBOutlet weak var addBtn: UIButton!
     var productArray: [Item] = []
     let dataManager = CoreDataManager.shared
-    
-    
+    var item : Item!
+    var context : NSManagedObjectContext!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.addBtn.frame.size.height = 50
+        self.addBtn.frame.size.width = 50
+        self.addBtn.frame.origin.y = self.view.frame.size.height - 80
         self.tblView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
     
@@ -30,6 +33,10 @@ class ViewController: UIViewController {
         getAllProductsList()
         self.navigationController?.navigationBar.backgroundColor = .clear
         
+    }
+    @IBAction func addProductBtn(_ sender: Any) {
+        let vc : AddItemViewController = self.storyboard?.instantiateViewController(identifier: "AddItemViewController") as! AddItemViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 extension ViewController{
@@ -91,5 +98,18 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate {
             vc.item = item
             self.navigationController?.pushViewController(vc, animated: true)
     }
+    // Override to support editing the table view.
+    
+     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            // Delete the row from the data source
+            let i = indexPath.row
+            productArray.remove(at: i)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.reloadData()
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        }
+     }
 
 }
