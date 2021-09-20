@@ -1,0 +1,6 @@
+framework module Pods_Lab_A1_A2_iOS__kirna_779568 {
+  umbrella header "Pods-Lab_A1_A2_iOS_-kirna_779568-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -22,6 +22,7 @@
 		32EC95B325C963EE002A86C8 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC95B225C963EE002A86C8 /* ItemDetailViewController.swift */; };
 		A25C3ED426F863EF00807AB5 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25C3ED326F863EF00807AB5 /* AddItemViewController.swift */; };
 		A25C3ED826F8644000807AB5 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25C3ED726F8644000807AB5 /* Common.swift */; };
+		BC6C48BF58364CA2AFE172E2 /* Pods_Lab_A1_A2_iOS__kirna_779568.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCCEA1BC23F9A9F79549C5A /* Pods_Lab_A1_A2_iOS__kirna_779568.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +41,11 @@
 		32EC95AC25C95ECC002A86C8 /* ItemStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStruct.swift; sourceTree = "<group>"; };
 		32EC95B025C9605D002A86C8 /* Items.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Items.plist; sourceTree = "<group>"; };
 		32EC95B225C963EE002A86C8 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		825292DBE1B078DCECBEEB13 /* Pods-Lab_A1_A2_iOS_-kirna_779568.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lab_A1_A2_iOS_-kirna_779568.release.xcconfig"; path = "Target Support Files/Pods-Lab_A1_A2_iOS_-kirna_779568/Pods-Lab_A1_A2_iOS_-kirna_779568.release.xcconfig"; sourceTree = "<group>"; };
 		A25C3ED326F863EF00807AB5 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		A25C3ED726F8644000807AB5 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		CDCCEA1BC23F9A9F79549C5A /* Pods_Lab_A1_A2_iOS__kirna_779568.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lab_A1_A2_iOS__kirna_779568.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87540D387DCF5CD11417694 /* Pods-Lab_A1_A2_iOS_-kirna_779568.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lab_A1_A2_iOS_-kirna_779568.debug.xcconfig"; path = "Target Support Files/Pods-Lab_A1_A2_iOS_-kirna_779568/Pods-Lab_A1_A2_iOS_-kirna_779568.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC6C48BF58364CA2AFE172E2 /* Pods_Lab_A1_A2_iOS__kirna_779568.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +65,8 @@
 			children = (
 				32EC958625C9575B002A86C8 /* Lab_A1_A2_iOS_-kirna_779568 */,
 				32EC958525C9575B002A86C8 /* Products */,
+				3BB1A5A757B6A87248B72A94 /* Pods */,
+				38EE1CA3774C9BA2BE925E68 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +131,24 @@
 			path = plist;
 			sourceTree = "<group>";
 		};
+		38EE1CA3774C9BA2BE925E68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDCCEA1BC23F9A9F79549C5A /* Pods_Lab_A1_A2_iOS__kirna_779568.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3BB1A5A757B6A87248B72A94 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D87540D387DCF5CD11417694 /* Pods-Lab_A1_A2_iOS_-kirna_779568.debug.xcconfig */,
+				825292DBE1B078DCECBEEB13 /* Pods-Lab_A1_A2_iOS_-kirna_779568.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A25C3ED626F8642C00807AB5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32EC959B25C9575E002A86C8 /* Build configuration list for PBXNativeTarget "Lab_A1_A2_iOS_-kirna_779568" */;
 			buildPhases = (
+				4513413FE88AE5EA52D61A52 /* [CP] Check Pods Manifest.lock */,
 				32EC958025C9575B002A86C8 /* Sources */,
 				32EC958125C9575B002A86C8 /* Frameworks */,
 				32EC958225C9575B002A86C8 /* Resources */,
+				BE3F4DE26FCC41BB090022CA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,6 +235,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4513413FE88AE5EA52D61A52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lab_A1_A2_iOS_-kirna_779568-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE3F4DE26FCC41BB090022CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lab_A1_A2_iOS_-kirna_779568/Pods-Lab_A1_A2_iOS_-kirna_779568-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lab_A1_A2_iOS_-kirna_779568/Pods-Lab_A1_A2_iOS_-kirna_779568-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lab_A1_A2_iOS_-kirna_779568/Pods-Lab_A1_A2_iOS_-kirna_779568-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		32EC958025C9575B002A86C8 /* Sources */ = {
@@ -366,6 +435,7 @@
 		};
 		32EC959C25C9575E002A86C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D87540D387DCF5CD11417694 /* Pods-Lab_A1_A2_iOS_-kirna_779568.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -383,6 +453,7 @@
 		};
 		32EC959D25C9575E002A86C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 825292DBE1B078DCECBEEB13 /* Pods-Lab_A1_A2_iOS_-kirna_779568.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

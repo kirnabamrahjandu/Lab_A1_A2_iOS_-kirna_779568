@@ -41,6 +41,7 @@ class AddItemViewController: UIViewController,UITextViewDelegate,UITextFieldDele
         let numberID = numberFormatter.number(from: "\(itemIDLabel.text ?? "")")
         let numberIDFloatValue = numberID?.floatValue
         item.itemId = Int32(numberIDFloatValue!)
+        item.itemName = itemNameLabel.text
         
         do {
             try context.save()
