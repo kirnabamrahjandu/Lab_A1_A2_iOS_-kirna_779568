@@ -26,6 +26,8 @@ class ViewController: UIViewController {
         self.addBtn.frame.size.width = 50
         self.addBtn.frame.origin.y = self.view.frame.size.height - 80
         self.tblView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        context = appDelegate.persistentContainer.viewContext
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -100,16 +102,57 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate {
     }
     // Override to support editing the table view.
     
-     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
+//     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+//        if editingStyle == .delete {
+//            // Delete the row from the data source
+//            let i = indexPath.row
+//            productArray.remove(at: i)
+//            tableView.deleteRows(at: [indexPath], with: .fade)
+//            tableView.reloadData()
+//        } else if editingStyle == .insert {
+//            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+//        }
+//     }
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        // action one
+        let editAction = UITableViewRowAction(style: .default, title: "Edit", handler: { [self] (action, indexPath) in
+            print("Edit tapped")
+            
+            let item = productArray[indexPath.row]
+            let vc : ItemDetailViewController = self.storyboard?.instantiateViewController(identifier: "ItemDetailViewController") as! ItemDetailViewController
+            vc.item = item
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+            
+        })
+        editAction.backgroundColor = UIColor.blue
+        
+        // action two
+        let deleteAction = UITableViewRowAction(style: .default, title: "Delete", handler: { (action, indexPath) in
+            print("Delete tapped")
             // Delete the row from the data source
             let i = indexPath.row
-            productArray.remove(at: i)
+            let toDelete = self.productArray[i]
+            print(toDelete.itemName!)
+            self.productArray.remove(at: i)
+            
+//            // remove from database
+//            self.context.delete(toDelete)
+//            do {
+//                try self.context.save()
+//                print("Deleted!")
+//            }
+//            catch {
+//                print("error while commiting delete")
+//            }
+            
+            
             tableView.deleteRows(at: [indexPath], with: .fade)
             tableView.reloadData()
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }
-     }
-
+        })
+        deleteAction.backgroundColor = UIColor.red
+        
+        return [editAction, deleteAction]
+    }
 }
