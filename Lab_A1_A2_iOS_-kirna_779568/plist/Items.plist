@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <!--
    Items.plist
-   A2_FA_iOS_Hasan_C0788314
+Lab_A1_A2_iOS_-kirna_779568
 
    Created by Kirna on 19/09/21.
    Copyright (c) 2021 Kirna. All rights reserved.
@@ -111,7 +111,7 @@
             <key>itemName</key>
             <string>Google Pixel 4a 5G</string>
             <key>itemDescription</key>
-            <string>5G capable cell phone gives you an extra boost of speed so you can download a movie in seconds, enjoy smooth streaming in ultra clear HD, play games at home and on the go, and even share your 5G speed with friends.The all day battery can last up to 48 hours with Extreme Battery Saver. Your phone will automatically receive the latest OS and security updates for at least 3 years.With HD Duo screen sharing, you can read articles, watch live sports, and video chat with friends and family</string>
+            <string>5G capable cell phone gives you an extra boost of speed so you can download a movie in seconds, enjoy smooth streaming in ultra clear HD, play games at home and on the go, and even share your 5G speed with friends.</string>
             <key>itemCost</key>
             <integer>2345</integer>
             <key>itemProvider</key>

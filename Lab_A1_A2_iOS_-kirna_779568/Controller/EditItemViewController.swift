@@ -18,7 +18,6 @@ class EditItemViewController: UIViewController,UITextViewDelegate,UITextFieldDel
     @IBOutlet weak var itemIDLabel: UITextField!
     @IBOutlet weak var itemHearderLabel: UILabel!
 
-    var productArray: [Item] = []
     let dataManager = CoreDataManager.shared
     var item : Item!
     var context : NSManagedObjectContext!
@@ -32,10 +31,9 @@ class EditItemViewController: UIViewController,UITextViewDelegate,UITextFieldDel
         itemNameLabel.text = item.itemName ?? ""
         itemProviderLabel.text = item.itemProvider ?? ""
         itemIDLabel.text = "\(item.itemId)"
-       // itemProviderLabel.text = "abcd"
+        print("This is the item",item!)
     }
     @IBAction func save(_ sender: Any) {
-        // create a new note in the notebook
         self.item = Item(context:context)
         let numberFormatter = NumberFormatter()
         let number = numberFormatter.number(from: "\(itemPriceLabel.text ?? "")")

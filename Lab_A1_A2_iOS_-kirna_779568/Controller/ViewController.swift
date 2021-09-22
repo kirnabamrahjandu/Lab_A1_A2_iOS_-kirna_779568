@@ -100,28 +100,16 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate {
             vc.item = item
             self.navigationController?.pushViewController(vc, animated: true)
     }
-    // Override to support editing the table view.
-    
-//     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-//        if editingStyle == .delete {
-//            // Delete the row from the data source
-//            let i = indexPath.row
-//            productArray.remove(at: i)
-//            tableView.deleteRows(at: [indexPath], with: .fade)
-//            tableView.reloadData()
-//        } else if editingStyle == .insert {
-//            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-//        }
-//     }
+
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         
         // action one
         let editAction = UITableViewRowAction(style: .default, title: "Edit", handler: { [self] (action, indexPath) in
             print("Edit tapped")
             
-            let item = productArray[indexPath.row]
+           // let item = productArray[indexPath.row]
             let vc : EditItemViewController = self.storyboard?.instantiateViewController(identifier: "EditItemViewController") as! EditItemViewController
-            vc.item = item
+            vc.item = productArray[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
             
             
@@ -134,7 +122,7 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate {
             // Delete the row from the data source
             let i = indexPath.row
             let toDelete = self.productArray[i]
-            print(toDelete.itemName!)
+            print(toDelete)
             self.productArray.remove(at: i)
             
 //            // remove from database

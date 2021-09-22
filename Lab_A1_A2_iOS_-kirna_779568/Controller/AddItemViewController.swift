@@ -30,7 +30,6 @@ class AddItemViewController: UIViewController,UITextViewDelegate,UITextFieldDele
         // Do any additional setup after loading the view.
     }
     @IBAction func save(_ sender: Any) {
-        // create a new note in the notebook
         self.item = Item(context:context)
         let numberFormatter = NumberFormatter()
         let number = numberFormatter.number(from: "\(itemPriceLabel.text ?? "")")
