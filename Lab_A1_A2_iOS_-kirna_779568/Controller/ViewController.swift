@@ -120,7 +120,7 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate {
             print("Edit tapped")
             
             let item = productArray[indexPath.row]
-            let vc : ItemDetailViewController = self.storyboard?.instantiateViewController(identifier: "ItemDetailViewController") as! ItemDetailViewController
+            let vc : EditItemViewController = self.storyboard?.instantiateViewController(identifier: "EditItemViewController") as! EditItemViewController
             vc.item = item
             self.navigationController?.pushViewController(vc, animated: true)
             

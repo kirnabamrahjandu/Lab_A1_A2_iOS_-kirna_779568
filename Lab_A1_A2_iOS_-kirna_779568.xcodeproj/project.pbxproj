@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,7 @@
 		32EC95B325C963EE002A86C8 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EC95B225C963EE002A86C8 /* ItemDetailViewController.swift */; };
 		A25C3ED426F863EF00807AB5 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25C3ED326F863EF00807AB5 /* AddItemViewController.swift */; };
 		A25C3ED826F8644000807AB5 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25C3ED726F8644000807AB5 /* Common.swift */; };
+		A263E1A026FB046B00ED9AE9 /* EditItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A263E19F26FB046B00ED9AE9 /* EditItemViewController.swift */; };
 		BC6C48BF58364CA2AFE172E2 /* Pods_Lab_A1_A2_iOS__kirna_779568.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCCEA1BC23F9A9F79549C5A /* Pods_Lab_A1_A2_iOS__kirna_779568.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		825292DBE1B078DCECBEEB13 /* Pods-Lab_A1_A2_iOS_-kirna_779568.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lab_A1_A2_iOS_-kirna_779568.release.xcconfig"; path = "Target Support Files/Pods-Lab_A1_A2_iOS_-kirna_779568/Pods-Lab_A1_A2_iOS_-kirna_779568.release.xcconfig"; sourceTree = "<group>"; };
 		A25C3ED326F863EF00807AB5 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		A25C3ED726F8644000807AB5 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		A263E19F26FB046B00ED9AE9 /* EditItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemViewController.swift; sourceTree = "<group>"; };
 		CDCCEA1BC23F9A9F79549C5A /* Pods_Lab_A1_A2_iOS__kirna_779568.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lab_A1_A2_iOS__kirna_779568.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87540D387DCF5CD11417694 /* Pods-Lab_A1_A2_iOS_-kirna_779568.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lab_A1_A2_iOS_-kirna_779568.debug.xcconfig"; path = "Target Support Files/Pods-Lab_A1_A2_iOS_-kirna_779568/Pods-Lab_A1_A2_iOS_-kirna_779568.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,7 +147,6 @@
 				D87540D387DCF5CD11417694 /* Pods-Lab_A1_A2_iOS_-kirna_779568.debug.xcconfig */,
 				825292DBE1B078DCECBEEB13 /* Pods-Lab_A1_A2_iOS_-kirna_779568.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -163,6 +164,7 @@
 				32EC958B25C9575B002A86C8 /* ViewController.swift */,
 				32EC95B225C963EE002A86C8 /* ItemDetailViewController.swift */,
 				A25C3ED326F863EF00807AB5 /* AddItemViewController.swift */,
+				A263E19F26FB046B00ED9AE9 /* EditItemViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -290,6 +292,7 @@
 				A25C3ED826F8644000807AB5 /* Common.swift in Sources */,
 				32EC958A25C9575B002A86C8 /* SceneDelegate.swift in Sources */,
 				A25C3ED426F863EF00807AB5 /* AddItemViewController.swift in Sources */,
+				A263E1A026FB046B00ED9AE9 /* EditItemViewController.swift in Sources */,
 				32EC95B325C963EE002A86C8 /* ItemDetailViewController.swift in Sources */,
 				32EC95AA25C958BA002A86C8 /* CoreDataManager.swift in Sources */,
 				32EC959225C9575B002A86C8 /* Lab_A1_A2_iOS_-kirna_779568.xcdatamodeld in Sources */,

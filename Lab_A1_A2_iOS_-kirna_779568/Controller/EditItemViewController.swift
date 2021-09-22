@@ -1,21 +1,23 @@
 //
-//  AddItemViewController.swift
+//  EditItemViewController.swift
 //  Lab_A1_A2_iOS_-kirna_779568
 //
-//  Created by Kirna 20/09/21.
+//  Created by Kirna 22/09/21.
 //  Copyright © 2021 Kirna. All rights reserved.
 //
 
 import UIKit
 import CoreData
 
-class AddItemViewController: UIViewController,UITextViewDelegate,UITextFieldDelegate {
+class EditItemViewController: UIViewController,UITextViewDelegate,UITextFieldDelegate {
     
     @IBOutlet weak var itemPriceLabel: UITextField!
     @IBOutlet weak var itemProviderLabel: UITextField!
     @IBOutlet weak var itemDescLAbel: UITextView!
     @IBOutlet weak var itemNameLabel: UITextField!
     @IBOutlet weak var itemIDLabel: UITextField!
+    @IBOutlet weak var itemHearderLabel: UILabel!
+
     var productArray: [Item] = []
     let dataManager = CoreDataManager.shared
     var item : Item!
@@ -24,10 +26,13 @@ class AddItemViewController: UIViewController,UITextViewDelegate,UITextFieldDele
         super.viewDidLoad()
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         context = appDelegate.persistentContainer.viewContext
-        itemDescLAbel.delegate = self
-        itemDescLAbel.text = "Enter Product Description"
-        itemDescLAbel.textColor = UIColor.lightGray
-        // Do any additional setup after loading the view.
+        itemHearderLabel.text = item.itemName ?? ""
+        itemDescLAbel.text = item.itemDescription ?? ""
+        itemPriceLabel.text = "\(item.itemCost)"
+        itemNameLabel.text = item.itemName ?? ""
+        itemProviderLabel.text = item.itemProvider ?? ""
+        itemIDLabel.text = "\(item.itemId)"
+       // itemProviderLabel.text = "abcd"
     }
     @IBAction func save(_ sender: Any) {
         // create a new note in the notebook
@@ -42,7 +47,6 @@ class AddItemViewController: UIViewController,UITextViewDelegate,UITextFieldDele
         let numberIDFloatValue = numberID?.floatValue
         item.itemId = Int32(numberIDFloatValue!)
         item.itemName = itemNameLabel.text
-        
         do {
             try context.save()
             // show an alert box
